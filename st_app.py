@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 import math
 
-
 #%% utils function
 def compute_ud(risk_reward_ratio, stop_loss_percent):
     return 1 + risk_reward_ratio*stop_loss_percent, 1 - stop_loss_percent
@@ -142,7 +141,7 @@ frames = [
         data=[go.Scatter(x=central.index[:i+1], y=central[column][:i+1]) for column in central.columns],
         name=f'frame{i}'
     )
-    for i in range(len(central))
+    for i in range(len(central)+1)
 ]
 
 # Add frames to the figure
@@ -163,7 +162,7 @@ fig.update_layout(
         }]
     }],
     hovermode='x unified',
-    xaxis=dict(showgrid=True, range=[0, n[-1]+1]),
+    xaxis=dict(showgrid=True), # , range=[0, n[-1]+1]
     yaxis=dict(showgrid=True),
     autosize=True
 )
