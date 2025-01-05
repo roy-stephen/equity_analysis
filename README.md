@@ -122,7 +122,7 @@ pip install pandas numpy plotly streamlit
 ```
 When it's done, you can run the app using:
 ```python
-streamlit run "Equity Simulator.py"
+streamlit run app.py
 ```
 
 ## Conclusion

@@ -73,8 +73,7 @@ def write_growth(growth, growth_per_trade):
 
 #%% ui
 # settings
-st.set_page_config(layout="wide")
-
+st.set_page_config(layout="wide", page_title="Equity Simulator")
 # creating sidebar and reading user input
 st.sidebar.header('Trading parameters ⚙️')
 initial_balance = st.sidebar.number_input("Initial Balance 💰:", min_value=0, value=100)
