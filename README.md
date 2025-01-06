@@ -1,7 +1,7 @@
 # Modeling Trader Account Balance: A Deterministic Approach
 A deterministic model for trader account balance analysis, featuring a Streamlit app for interactive exploration. Focuses on expectation, median, and mode.
 
-👉 [Try the equity simulator](trade-sim.streamlit.app)
+👉 [Try the equity simulator](https://trade-sim.streamlit.app)
 
 
 This document details our modeling process used to simulate trader account balance, focusing on a deterministic approach as opposed to stochastic methods like Monte Carlo simulations. We will explain why a deterministic approach is more suitable for this problem, derive relevant mathematical formulas, and show how these are implemented in a user-friendly Streamlit application.
@@ -130,7 +130,7 @@ streamlit run app.py
 ```
 
 #### Online
-👉 [Try the equity simulator](trade-sim.streamlit.app)
+👉 [Try the equity simulator](https://trade-sim.streamlit.app)
 
 
 ## Conclusion
